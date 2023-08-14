@@ -1,0 +1,142 @@
+.gpt3-navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2rem 6rem;
+}
+
+.gpt3-navbar__links {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.gpt3-navbar__logo {
+  margin-right: 2rem;
+}
+
+.gpt3-navbar__logo img {
+  width: 62px;
+  height: 16.02px;
+}
+
+.gpt3-navbar__links-container {
+  display: flex;
+}
+
+.gpt3-navbar__sign {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.gpt3-navbar__links-container p,
+.gpt3-navbar__sign p,
+.gpt3-navbar__menu-container p {
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+
+.gpt3-navbar__links-container p {
+  line-height: 40px;
+}
+
+.underline {
+  border-bottom: #ff4820 4px solid;
+  border-radius: 3px;
+  transition: all 0.1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.underline-none {
+  border: 0px;
+}
+.gpt3-navbar__sign button,
+.gpt3-navbar__menu-sign button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background-color: #ff4820;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.gpt3-navbar__menu {
+  margin-left: 1rem;
+  display: none;
+  position: relative;
+}
+
+.gpt3-navbar__menu svg {
+  cursor: pointer;
+}
+
+.gpt3-navbar__menu-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  text-align: end;
+  background: var(--color-footer);
+  padding: 2rem;
+  position: absolute;
+  min-width: 210px;
+  right: 0;
+  top: 40px;
+  margin-top: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5 rgbaa(0, 0, 0, 0.2);
+}
+
+.gpt3-navbar__menu-container p {
+  margin: 1rem 0;
+}
+
+.gpt3-navbar__menu-sign {
+  display: none;
+}
+
+/* *****************Media Queries ******************** */
+
+@media screen and (max-width: 1200px) {
+  .gpt3-navbar {
+    padding: 2rem;
+  }
+  .gpt3-navbar__links-container {
+    display: none;
+  }
+  .gpt3-navbar__menu {
+    display: flex;
+    margin-left: 1rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+}
+
+@media screen and (max-width: 550px) {
+  .gpt3-navbar {
+    padding: 2rem;
+  }
+
+  .gpt3-navbar__sign {
+    display: none;
+  }
+
+  .gpt3-navbar__menu-container {
+    top: 20px;
+  }
+
+  .gpt3-navbar__menu-sign {
+    display: block;
+  }
+}
